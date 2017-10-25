@@ -4,7 +4,7 @@ import com.google.android.things.contrib.driver.pwmservo.Servo;
 
 import java.io.IOException;
 
-public class BoxLock {
+public class BoxLock implements Lock {
     private Servo mServo;
     private double mOpenAngle = 0;
     private double mClosedAngle = 120;
@@ -18,6 +18,7 @@ public class BoxLock {
         } catch (IOException e) {}
     }
 
+    @Override
     public void openLock() {
         try {
             mServo.setAngle(mOpenAngle);
@@ -26,6 +27,7 @@ public class BoxLock {
         }
     }
 
+    @Override
     public void closeLock() {
         try {
             mServo.setAngle(mClosedAngle);
@@ -34,11 +36,7 @@ public class BoxLock {
         }
     }
 
-    public void close() {
-        try {
-            mServo.close();
-        } catch( IOException e ) {
-
-        }
+    public void close() throws IOException {
+        mServo.close();
     }
 }

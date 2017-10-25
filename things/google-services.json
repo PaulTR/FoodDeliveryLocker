@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "231287463683",
+    "firebase_url": "https://lockbox-1750e.firebaseio.com",
+    "project_id": "lockbox-1750e",
+    "storage_bucket": "lockbox-1750e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231287463683:android:0f6e63ebcbb8866d",
+        "android_client_info": {
+          "package_name": "com.paultrebilcoxruiz.lockbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231287463683-0qevpi26cfis1ek2gd7om64mljh0bv3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCTwgu5TciWO67yKTfA3ucNn5qZK2eyXA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

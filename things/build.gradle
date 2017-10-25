@@ -7,6 +7,7 @@ android {
         applicationId "com.paultrebilcoxruiz.lockbox"
         minSdkVersion 26
         targetSdkVersion 26
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -27,8 +28,15 @@ dependencies {
     provided 'com.google.android.things:androidthings:0.5.1-devpreview'
     testCompile 'junit:junit:4.12'
 
-    compile 'com.google.android.things.contrib:driver-pwmservo:0.1'
+    compile 'com.google.android.things.contrib:driver-pwmservo:0.2'
     compile 'com.nilhcem.androidthings:driver-lcd1602:0.0.1'
+    compile 'com.google.android.things.contrib:driver-button:0.4'
+
+
+    compile 'com.google.firebase:firebase-core:11.4.0'
+    compile 'com.google.firebase:firebase-database:11.4.0'
 
 
 }
+
+apply plugin: 'com.google.gms.google-services'
